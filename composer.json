@@ -1,29 +1,37 @@
 {
-    "name": "mahdiraad/lumen-sail",
-    "description": "Installing Laravel Sail Package in Lumen",
+    "name": "lucenarenato/lumen-sail",
+    "description": "Installing Laravel Sail Package in Lumen - ^5.5|^6.0|^7.0",
     "license": "MIT",
     "support": {
-        "source": "https://github.com/mahdiraad/lumen-sail"
+        "source": "https://github.com/lucenarenato/lumen-sail"
     },
     "authors": [
         {
-            "name": "Mahdi M. Raad",
-            "email": "mahdiraad@gmail.com"
+            "name": "Renato Lucena",
+            "email": "cpdrenato@gmail.com"
         }
     ],
     "require": {
-        "laravel/sail": "^1.3"
+        "lucenarenato/sail-7.x": "1.x-dev"
     },
     "autoload": {
         "psr-4": {
-            "mahdiraad\\LumenSail\\": "src/"
+            "lucenarenato\\LumenSail\\": "src/"
         }
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
         "laravel": {
             "providers": [
-                "mahdiraad\\LumenSail\\LumenSailServiceProvider"
+                "lucenarenato\\LumenSail\\LumenSailServiceProvider"
             ]
         }
-    }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
